@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 25 14:47:11 2022
+# Process ID: 10080
+# Current directory: C:/Files/moodle/CompArch/project3/Group_8_Task_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1492 C:\Files\moodle\CompArch\project3\Group_8_Task_3\mips.xpr
+# Log file: C:/Files/moodle/CompArch/project3/Group_8_Task_3/vivado.log
+# Journal file: C:/Files/moodle/CompArch/project3/Group_8_Task_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'mips_mux_3_0' generated file not found 'c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/ip/mips_mux_3_0_1/mips_mux_3_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mips_mux_3_0' generated file not found 'c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/ip/mips_mux_3_0_1/mips_mux_3_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mips_mux_3_0' generated file not found 'c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/ip/mips_mux_3_0_1/mips_mux_3_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mips_mux_3_0' generated file not found 'c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/ip/mips_mux_3_0_1/mips_mux_3_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mips_mux_3_0' generated file not found 'c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/ip/mips_mux_3_0_1/mips_mux_3_0_sim_netlist.vhdl'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+INFO: [BD 41-1662] The design 'mips.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/synth/mips.v
+VHDL Output written to : c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/sim/mips.v
+VHDL Output written to : c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/hdl/mips_wrapper.v
+Exporting to file c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/hw_handoff/mips.hwh
+Generated Block Design Tcl file c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/hw_handoff/mips_bd.tcl
+Generated Hardware Definition File c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/synth/mips.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.754 ; gain = 0.000
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [BD 41-1662] The design 'mips.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/synth/mips.v
+VHDL Output written to : c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/sim/mips.v
+VHDL Output written to : c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/hdl/mips_wrapper.v
+Exporting to file c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/hw_handoff/mips.hwh
+Generated Block Design Tcl file c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/hw_handoff/mips_bd.tcl
+Generated Hardware Definition File c:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.gen/sources_1/bd/mips/synth/mips.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source 'C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mips_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mips_wrapper_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:06:59 . Memory (MB): peak = 1202.754 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:09:30 . Memory (MB): peak = 1202.754 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled

@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 25 15:46:12 2022
+# Process ID: 21164
+# Current directory: D:/Vivado/Projects/project4/Group_8_Task_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18308 D:\Vivado\Projects\project4\Group_8_Task_3\mips.xpr
+# Log file: D:/Vivado/Projects/project4/Group_8_Task_3/vivado.log
+# Journal file: D:/Vivado/Projects/project4/Group_8_Task_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Projects/project4/Group_8_Task_3/mips.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+regenerate_bd_layout -routing
+close [ open D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/new/controlHazard.v w ]
+add_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/new/controlHazard.v
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets DataPath/exPipeline_0_o_pcSrc]
+startgroup
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/o_pcSrc] [get_bd_pins DataPath/andGate_0/pcSrc]
+endgroup
+disconnect_bd_net /DataPath/idPipeline_0_o_pcSrc [get_bd_pins DataPath/exPipeline_0/i_pcSrc]
+delete_bd_objs [get_bd_nets DataPath/exPipeline_0_o_braddr]
+connect_bd_net [get_bd_pins DataPath/adder_1/adderOut] [get_bd_pins DataPath/mux_4/in1]
+disconnect_bd_net /DataPath/adder_1_adderOut [get_bd_pins DataPath/exPipeline_0/i_braddr]
+delete_bd_objs [get_bd_nets DataPath/exPipeline_0_o_ogaddr]
+connect_bd_net [get_bd_pins DataPath/mux_4/in0] [get_bd_pins DataPath/idPipeline_0/o_ogaddr]
+disconnect_bd_net /DataPath/idPipeline_0_o_ogaddr [get_bd_pins DataPath/exPipeline_0/i_ogaddr]
+update_module_reference mips_exPipeline_0_0
+update_module_reference mips_ifPipeline_0_0
+update_module_reference mips_idPipeline_0_0
+update_module_reference mips_exPipeline_0_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property location {2 1003 1164} [get_bd_cells xlslice_0]
+move_bd_cells [get_bd_cells DataPath] [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins DataPath/instructionMemory_0/instruction] [get_bd_pins DataPath/xlslice_6/Din]
+startgroup
+set_property -dict [list CONFIG.DIN_TO {26} CONFIG.DIN_FROM {31} CONFIG.DOUT_WIDTH {6}] [get_bd_cells DataPath/xlslice_6]
+endgroup
+create_bd_cell -type module -reference controlHazard DataPath/controlHazard_0
+connect_bd_net [get_bd_pins DataPath/xlslice_6/Dout] [get_bd_pins DataPath/controlHazard_0/opCode]
+connect_bd_net [get_bd_pins DataPath/controlHazard_0/en] [get_bd_pins DataPath/idPipeline_0/i_branchEn]
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/o_branchEn] [get_bd_pins DataPath/exPipeline_0/i_branchEn]
+connect_bd_net [get_bd_pins DataPath/exPipeline_0/o_branchEn] [get_bd_pins DataPath/controlHazard_0/en_mem]
+disconnect_bd_net /DataPath/i_clk_0_1 [get_bd_pins DataPath/ifPipeline_0/i_clk]
+connect_bd_net [get_bd_pins DataPath/in_clock] [get_bd_pins DataPath/ifPipeline_0/i_clk]
+delete_bd_objs [get_bd_nets DataPath/xlslice_6_Dout]
+connect_bd_net [get_bd_pins DataPath/xlslice_6/Dout] [get_bd_pins DataPath/ifPipeline_0/i_opCode]
+connect_bd_net [get_bd_pins DataPath/ifPipeline_0/o_opCode] [get_bd_pins DataPath/controlHazard_0/opCode]
+disconnect_bd_net /DataPath/xlconstant_1_dout [get_bd_pins DataPath/ifPipeline_0/en]
+connect_bd_net [get_bd_pins DataPath/ifPipeline_0/en] [get_bd_pins DataPath/controlHazard_0/en]
+save_bd_design
+close_bd_design [get_bd_designs mips]
+update_compile_order -fileset sources_1
+update_module_reference mips_instructionMemory_0_0
+close_bd_design [get_bd_designs mips]
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+open_bd_design {D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+regenerate_bd_layout -routing
+update_module_reference mips_controlHazard_0_0
+regenerate_bd_layout -routing
+update_module_reference mips_controlLogic_0_0
+update_module_reference mips_idPipeline_0_0
+update_module_reference mips_ifPipeline_0_0
+connect_bd_net [get_bd_pins DataPath/ctrl4] [get_bd_pins DataPath/ifPipeline_0/i_bneSrc]
+disconnect_bd_net /DataPath/ctrl4_1 [get_bd_pins DataPath/mux_5/ctrl]
+connect_bd_net [get_bd_pins DataPath/ifPipeline_0/o_bneSrc] [get_bd_pins DataPath/idPipeline_0/i_bneSrc]
+update_module_reference mips_andGate_0_0
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/o_bneSrc] [get_bd_pins DataPath/andGate_0/bneSrc]
+delete_bd_objs [get_bd_nets DataPath/ctrl3_1]
+connect_bd_net [get_bd_pins DataPath/ctrl3] [get_bd_pins DataPath/mux_5/ctrl]
+delete_bd_objs [get_bd_nets DataPath/mux_4_muxOut]
+delete_bd_objs [get_bd_nets DataPath/mux_3_muxOut]
+connect_bd_net [get_bd_pins DataPath/jmpMod_0/JumpAddress] [get_bd_pins DataPath/mux_5/in1]
+connect_bd_net [get_bd_pins DataPath/mux_5/in0] [get_bd_pins DataPath/mux_4/muxOut]
+disconnect_bd_net /DataPath/jmpMod_0_JumpAddress [get_bd_pins DataPath/mux_3/in0]
+disconnect_bd_net /DataPath/adder_0_adderOut [get_bd_pins DataPath/mux_3/in1]
+move_bd_cells [get_bd_cells /] [get_bd_cells DataPath/mux_3]
+delete_bd_objs [get_bd_cells mux_3]
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+update_module_reference mips_andGate_0_0
+close_bd_design [get_bd_designs mips]
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+open_bd_design {D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference mips_controlLogic_0_0
+close_bd_design [get_bd_designs mips]
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim
+open_bd_design {D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+disconnect_bd_net /DataPath/adder_0_adderOut [get_bd_pins DataPath/ifPipeline_0/i_ogaddr]
+delete_bd_objs [get_bd_nets DataPath/ifPipeline_0_o_ogaddr]
+connect_bd_net [get_bd_pins DataPath/ifPipeline_0/i_ogaddr] [get_bd_pins DataPath/adder_0/adderOut]
+connect_bd_net [get_bd_pins DataPath/ifPipeline_0/o_ogaddr] [get_bd_pins DataPath/idPipeline_0/i_ogaddr]
+disconnect_bd_net /DataPath/idPipeline_0_o_ogaddr [get_bd_pins DataPath/mux_4/in0]
+connect_bd_net [get_bd_pins DataPath/adder_0/adderOut] [get_bd_pins DataPath/mux_4/in0]
+save_bd_design
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+close_bd_design [get_bd_designs mips]
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+open_bd_design {D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+regenerate_bd_layout -routing
+disconnect_bd_net /DataPath/adder_0_adderOut [get_bd_pins DataPath/mux_4/in0]
+connect_bd_net [get_bd_pins DataPath/mux_4/in0] [get_bd_pins DataPath/adder_0/adderOut]
+update_module_reference mips_controlLogic_0_0
+update_module_reference mips_idPipeline_0_0
+update_module_reference mips_ifPipeline_0_0
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+close_bd_design [get_bd_designs mips]
+close_sim
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+open_bd_design {D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference mips_instructionMemory_0_0
+update_module_reference mips_programCounter_0_0
+regenerate_bd_layout -routing
+connect_bd_net [get_bd_pins DataPath/programCounter_0/en] [get_bd_pins DataPath/controlHazard_0/en]
+save_bd_design
+close_bd_design [get_bd_designs mips]
+close_sim
+generate_target Simulation [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Vivado/Projects/project4/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir D:/Vivado/Projects/project4/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Projects/project4/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {D:/Vivado/Projects/project4/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim

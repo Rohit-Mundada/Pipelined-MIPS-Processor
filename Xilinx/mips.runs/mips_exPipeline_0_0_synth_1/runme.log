@@ -1,0 +1,5 @@
+
+*** Running vivado
+    with args -log mips_exPipeline_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_exPipeline_0_0.tcl
+
+

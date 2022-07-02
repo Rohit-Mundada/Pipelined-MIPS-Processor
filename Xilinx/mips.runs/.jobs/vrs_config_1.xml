@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mips_controlLogic_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_controlLogic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_jmpMod_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_jmpMod_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_alu_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_alu_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_mux_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_mux_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_mux_1_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_mux_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_programCounter_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_programCounter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_shiftLeft_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_shiftLeft_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_mux_2_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_mux_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_adder_1_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_adder_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_mux4_1_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_mux4_1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_signExtern_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_signExtern_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_adder_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_adder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_instructionMemory_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_instructionMemory_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_dataMemory_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_dataMemory_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_RegFile_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_RegFile_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_exPipeline_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_exPipeline_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_idPipeline_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_idPipeline_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_ifPipeline_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_ifPipeline_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mips_memPipeline_0_0_synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_memPipeline_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="mips_controlLogic_0_0_synth_1"/>
+		<Parent Id="mips_jmpMod_0_0_synth_1"/>
+		<Parent Id="mips_alu_0_0_synth_1"/>
+		<Parent Id="mips_mux_0_0_synth_1"/>
+		<Parent Id="mips_mux_1_0_synth_1"/>
+		<Parent Id="mips_programCounter_0_0_synth_1"/>
+		<Parent Id="mips_shiftLeft_0_0_synth_1"/>
+		<Parent Id="mips_mux_2_0_synth_1"/>
+		<Parent Id="mips_adder_1_0_synth_1"/>
+		<Parent Id="mips_mux4_1_0_0_synth_1"/>
+		<Parent Id="mips_signExtern_0_0_synth_1"/>
+		<Parent Id="mips_adder_0_0_synth_1"/>
+		<Parent Id="mips_instructionMemory_0_0_synth_1"/>
+		<Parent Id="mips_dataMemory_0_0_synth_1"/>
+		<Parent Id="mips_RegFile_0_0_synth_1"/>
+		<Parent Id="mips_exPipeline_0_0_synth_1"/>
+		<Parent Id="mips_idPipeline_0_0_synth_1"/>
+		<Parent Id="mips_ifPipeline_0_0_synth_1"/>
+		<Parent Id="mips_memPipeline_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

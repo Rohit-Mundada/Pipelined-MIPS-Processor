@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 11 23:39:07 2022
+# Process ID: 14772
+# Current directory: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_adder_0_0_synth_1
+# Command line: vivado.exe -log mips_adder_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_adder_0_0.tcl
+# Log file: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_adder_0_0_synth_1/mips_adder_0_0.vds
+# Journal file: D:/Rohit BITS Data/3_Third Year/Second Sem/Comp Arch/Assignment/Assignment 2/mips_task2/mips_try/mips.runs/mips_adder_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mips_adder_0_0.tcl -notrace

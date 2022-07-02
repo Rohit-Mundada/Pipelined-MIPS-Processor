@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 23 18:31:30 2022
+# Process ID: 10392
+# Current directory: C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.sim/sim_1/behav/xsim/xsim.dir/mips_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 23 18:31:31 2022...

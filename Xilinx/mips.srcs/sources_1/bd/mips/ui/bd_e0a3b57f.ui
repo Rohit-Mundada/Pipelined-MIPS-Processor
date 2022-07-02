@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.1931",
+   "Default View_TopLeft":"-185,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port in_clock -pg 1 -lvl 0 -x 0 -y 30 -defaultsOSRD
+preplace inst DataPath -pg 1 -lvl 2 -x 480 -y 150 -defaultsOSRD
+preplace inst controlLogic_0 -pg 1 -lvl 1 -x 160 -y 160 -defaultsOSRD
+preplace netloc i_clk_0_1 1 0 2 NJ 30 360J
+preplace netloc instructionMemory_0_instruction 1 0 3 20 10 NJ 10 600
+preplace netloc controlLogic_0_regWrite 1 1 1 340 110n
+preplace netloc controlLogic_0_aluSrc 1 1 1 350 110n
+preplace netloc controlLogic_0_memWrite 1 1 1 320 170n
+preplace netloc controlLogic_0_aluOp 1 1 1 300 70n
+preplace netloc controlLogic_0_memToReg 1 1 1 310 150n
+preplace netloc controlLogic_0_regDst 1 1 1 N 90
+preplace netloc controlLogic_0_pcSrc 1 1 1 330 170n
+preplace netloc controlLogic_0_bneSrc 1 1 1 N 230
+levelinfo -pg 1 0 160 480 620
+pagesize -pg 1 -db -bbox -sgen -100 0 620 290
+"
+}
+{
+   "da_clkrst_cnt":"6"
+}

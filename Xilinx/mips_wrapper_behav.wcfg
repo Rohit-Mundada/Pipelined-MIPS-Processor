@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mips_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mips_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1000308fs"></ZoomStartTime>
+      <ZoomEndTime time="1001206fs"></ZoomEndTime>
+      <Cursor1Time time="1001200fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="53" />
+   <wvobject fp_name="/mips_wrapper/in_clock" type="logic">
+      <obj_property name="ElementShortName">in_clock</obj_property>
+      <obj_property name="ObjectShortName">in_clock</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider13">
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/programCounter_0/pcOut" type="array">
+      <obj_property name="ElementShortName">pcOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider29">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/alu_0/inst/op1" type="array">
+      <obj_property name="ElementShortName">op1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/alu_0/inst/op2" type="array">
+      <obj_property name="ElementShortName">op2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/alu_0/inst/aluOut" type="array">
+      <obj_property name="ElementShortName">aluOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider56">
+      <obj_property name="label">data memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/dataMemory_0/inst/mem[50]" type="array">
+      <obj_property name="ElementShortName">[50][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[50][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider42">
+      <obj_property name="label">Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/controlLogic_0/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider84">
+      <obj_property name="label">$t1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[9].reg_i /mipsReg" type="array">
+      <obj_property name="ElementShortName">mipsReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mipsReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider85">
+      <obj_property name="label">$t2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[10].reg_i /mipsReg" type="array">
+      <obj_property name="ElementShortName">mipsReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mipsReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider86">
+      <obj_property name="label">$t3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[11].reg_i /mipsReg" type="array">
+      <obj_property name="ElementShortName">mipsReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mipsReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider87">
+      <obj_property name="label">$t4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[12].reg_i /mipsReg" type="array">
+      <obj_property name="ElementShortName">mipsReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mipsReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider88">
+      <obj_property name="label">$t5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[13].reg_i /DataIn" type="array">
+      <obj_property name="ElementShortName">DataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[13].reg_i /DataOut" type="array">
+      <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[13].reg_i /mipsReg" type="array">
+      <obj_property name="ElementShortName">mipsReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mipsReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[13].reg_i /regAddr" type="array">
+      <obj_property name="ElementShortName">regAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider89">
+      <obj_property name="label">$t6</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[14].reg_i /DataIn" type="array">
+      <obj_property name="ElementShortName">DataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[14].reg_i /DataOut" type="array">
+      <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[14].reg_i /mipsReg" type="array">
+      <obj_property name="ElementShortName">mipsReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mipsReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[14].reg_i /regAddr" type="array">
+      <obj_property name="ElementShortName">regAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider13122">
+      <obj_property name="label">$t7</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[15].reg_i /DataIn" type="array">
+      <obj_property name="ElementShortName">DataIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[15].reg_i /DataOut" type="array">
+      <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[15].reg_i /mipsReg" type="array">
+      <obj_property name="ElementShortName">mipsReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mipsReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[15].reg_i /regAddr" type="array">
+      <obj_property name="ElementShortName">regAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider35">
+      <obj_property name="label">hazard detection</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/rs" type="array">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/rt" type="array">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/rt_ex_mem" type="array">
+      <obj_property name="ElementShortName">rt_ex_mem[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt_ex_mem[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/regRd_ex" type="array">
+      <obj_property name="ElementShortName">regRd_ex[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regRd_ex[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/regRd_mem" type="array">
+      <obj_property name="ElementShortName">regRd_mem[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regRd_mem[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/regWrite" type="logic">
+      <obj_property name="ElementShortName">regWrite</obj_property>
+      <obj_property name="ObjectShortName">regWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/regWrite_ex" type="logic">
+      <obj_property name="ElementShortName">regWrite_ex</obj_property>
+      <obj_property name="ObjectShortName">regWrite_ex</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/regWrite_mem" type="logic">
+      <obj_property name="ElementShortName">regWrite_mem</obj_property>
+      <obj_property name="ObjectShortName">regWrite_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/memToReg_ex" type="logic">
+      <obj_property name="ElementShortName">memToReg_ex</obj_property>
+      <obj_property name="ObjectShortName">memToReg_ex</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/forwardA" type="array">
+      <obj_property name="ElementShortName">forwardA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardA[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/forwardingUnit_0/inst/forwardB" type="array">
+      <obj_property name="ElementShortName">forwardB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardB[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider47">
+      <obj_property name="label">control hazard</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/controlHazard_0/inst/opCode" type="array">
+      <obj_property name="ElementShortName">opCode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opCode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/controlHazard_0/inst/opCode_if_id" type="array">
+      <obj_property name="ElementShortName">opCode_if_id[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opCode_if_id[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/controlHazard_0/inst/opCode_id_ex" type="array">
+      <obj_property name="ElementShortName">opCode_id_ex[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opCode_id_ex[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/controlHazard_0/inst/en_ex_mem" type="logic">
+      <obj_property name="ElementShortName">en_ex_mem</obj_property>
+      <obj_property name="ObjectShortName">en_ex_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/controlHazard_0/inst/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_wrapper/mips_i/DataPath/controlHazard_0/inst/pcEn" type="logic">
+      <obj_property name="ElementShortName">pcEn</obj_property>
+      <obj_property name="ObjectShortName">pcEn</obj_property>
+   </wvobject>
+</wave_config>

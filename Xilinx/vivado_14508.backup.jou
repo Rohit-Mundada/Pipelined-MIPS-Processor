@@ -1,0 +1,362 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 24 13:41:08 2022
+# Process ID: 14508
+# Current directory: C:/Files/moodle/CompArch/project3/Group_8_Task_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6904 C:\Files\moodle\CompArch\project3\Group_8_Task_3\mips.xpr
+# Log file: C:/Files/moodle/CompArch/project3/Group_8_Task_3/vivado.log
+# Journal file: C:/Files/moodle/CompArch/project3/Group_8_Task_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.xpr
+update_compile_order -fileset sources_1
+update_module_reference mips_instructionMemory_0_0
+regenerate_bd_layout -routing
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+update_module_reference mips_instructionMemory_0_0
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+update_module_reference mips_instructionMemory_0_0
+regenerate_bd_layout -routing
+close_bd_design [get_bd_designs mips]
+update_module_reference mips_instructionMemory_0_0
+close_bd_design [get_bd_designs mips]
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix hex {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+open_bd_design {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+open_bd_design {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+regenerate_bd_layout -routing
+set_property location {1.5 563 241} [get_bd_cells DataPath]
+open_bd_design {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+delete_bd_objs [get_bd_nets DataPath/mux_1_muxOut]
+disconnect_bd_net /DataPath/idPipeline_0_o_rd_data2 [get_bd_pins DataPath/mux_1/in0]
+startgroup
+connect_bd_net [get_bd_pins DataPath/mux4_1_1/In1] [get_bd_pins DataPath/idPipeline_0/o_rd_data2]
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/o_rd_data2] [get_bd_pins DataPath/mux_1/in0]
+endgroup
+disconnect_bd_net /DataPath/idPipeline_0_o_rd_data2 [get_bd_pins DataPath/mux_1/in0]
+delete_bd_objs [get_bd_nets DataPath/mux4_1_1_Mux_out]
+startgroup
+connect_bd_net [get_bd_pins DataPath/mux4_1_1/Mux_out] [get_bd_pins DataPath/mux_1/in0]
+connect_bd_net [get_bd_pins DataPath/mux4_1_1/Mux_out] [get_bd_pins DataPath/alu_0/op2]
+endgroup
+disconnect_bd_net /DataPath/mux4_1_1_Mux_out [get_bd_pins DataPath/alu_0/op2]
+startgroup
+connect_bd_net [get_bd_pins DataPath/mux_1/muxOut] [get_bd_pins DataPath/alu_0/op2]
+endgroup
+regenerate_bd_layout -routing
+save_bd_design
+close_bd_design [get_bd_designs mips]
+close_sim
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+open_bd_design {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+regenerate_bd_layout -routing
+update_module_reference mips_forwardingUnit_0_0
+connect_bd_net [get_bd_pins DataPath/exPipeline_0/o_rt] [get_bd_pins DataPath/forwardingUnit_0/rt_ex_mem]
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/o_regWrite] [get_bd_pins DataPath/forwardingUnit_0/regWrite]
+connect_bd_net [get_bd_pins DataPath/exPipeline_0/o_memToReg] [get_bd_pins DataPath/forwardingUnit_0/memToReg_ex]
+regenerate_bd_layout -routing
+save_bd_design
+open_bd_design {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+close_bd_design [get_bd_designs mips]
+close_sim
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+update_module_reference mips_instructionMemory_0_0
+regenerate_bd_layout -routing
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+open_bd_design {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd}
+delete_bd_objs [get_bd_cells DataPath/xlconstant_0]
+delete_bd_objs [get_bd_nets DataPath/xlconstant_0_dout]
+startgroup
+connect_bd_net [get_bd_pins DataPath/dataMemory_0/readData] [get_bd_pins DataPath/mux4_1_1/In4]
+endgroup
+connect_bd_net [get_bd_pins DataPath/dataMemory_0/readData] [get_bd_pins DataPath/mux4_1_0/In4]
+save_bd_design
+regenerate_bd_layout -routing
+close_bd_design [get_bd_designs mips]
+close_sim
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim
+update_module_reference mips_forwardingUnit_0_0
+regenerate_bd_layout -routing
+close [ open C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/new/regFileForwarding.v w ]
+add_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/new/regFileForwarding.v
+update_compile_order -fileset sources_1
+update_module_reference mips_instructionMemory_0_0
+create_bd_cell -type module -reference regFileForwarding DataPath/regFileForwarding_0
+connect_bd_net [get_bd_pins DataPath/xlslice_0/Dout] [get_bd_pins DataPath/regFileForwarding_0/rs]
+connect_bd_net [get_bd_pins DataPath/xlslice_1/Dout] [get_bd_pins DataPath/regFileForwarding_0/rt]
+connect_bd_net [get_bd_pins DataPath/memPipeline_0/o_regWrAddr] [get_bd_pins DataPath/regFileForwarding_0/writeAddr]
+startgroup
+connect_bd_net [get_bd_pins DataPath/memPipeline_0/o_regWrite] [get_bd_pins DataPath/regFileForwarding_0/regWrite]
+endgroup
+create_bd_cell -type module -reference mux DataPath/mux_7
+set_property -dict [list CONFIG.width {32}] [get_bd_cells DataPath/mux_7]
+connect_bd_net [get_bd_pins DataPath/regFileForwarding_0/forwardD] [get_bd_pins DataPath/mux_7/ctrl]
+connect_bd_net [get_bd_pins DataPath/RegFile_0/regRdData1] [get_bd_pins DataPath/mux_7/in0]
+connect_bd_net [get_bd_pins DataPath/mux_2/muxOut] [get_bd_pins DataPath/mux_7/in1]
+disconnect_bd_net /DataPath/RegFile_0_regRdData1 [get_bd_pins DataPath/idPipeline_0/i_rd_data1]
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/i_rd_data1] [get_bd_pins DataPath/mux_7/muxOut]
+create_bd_cell -type module -reference mux DataPath/mux_8
+set_property -dict [list CONFIG.width {32}] [get_bd_cells DataPath/mux_8]
+connect_bd_net [get_bd_pins DataPath/regFileForwarding_0/forwardE] [get_bd_pins DataPath/mux_8/ctrl]
+connect_bd_net [get_bd_pins DataPath/RegFile_0/regRdData2] [get_bd_pins DataPath/mux_8/in0]
+disconnect_bd_net /DataPath/RegFile_0_regRdData2 [get_bd_pins DataPath/idPipeline_0/i_rd_data2]
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/i_rd_data2] [get_bd_pins DataPath/mux_7/muxOut]
+disconnect_bd_net /DataPath/mux_7_muxOut [get_bd_pins DataPath/idPipeline_0/i_rd_data2]
+connect_bd_net [get_bd_pins DataPath/idPipeline_0/i_rd_data2] [get_bd_pins DataPath/mux_8/muxOut]
+connect_bd_net [get_bd_pins DataPath/mux_2/muxOut] [get_bd_pins DataPath/mux_8/in1]
+regenerate_bd_layout -routing
+update_module_reference mips_instructionMemory_0_0
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+update_module_reference mips_instructionMemory_0_0
+generate_target Simulation [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd]
+export_ip_user_files -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.srcs/sources_1/bd/mips/mips.bd] -directory C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/sim_scripts -ip_user_files_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files -ipstatic_source_dir C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/modelsim} {questa=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/questa} {riviera=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/riviera} {activehdl=C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg
+source mips_wrapper.tcl
+update_compile_order -fileset sources_1
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {C:/Files/moodle/CompArch/project3/Group_8_Task_3/mips_wrapper_behav.wcfg}
+close_sim
+close_bd_design [get_bd_designs mips]
